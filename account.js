@@ -7,7 +7,8 @@ const fs = require('fs');
 //生成完毕后 可在transfer.js与mint.js脚本中调用
 const number = 100
 
-const web3 = new Web3(process.env.rpc_url);
+const rpc_url = 'https://rpc-mainnet-1.bevm.io/' 
+const web3 = new Web3(rpc_url);
 let accounts = {}
 
 for (let i = 0; i < number; i++) {
